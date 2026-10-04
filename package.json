@@ -1,0 +1,28 @@
+{
+  "name": "@local/dsh-plugin-screen-wake",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Keeps the monitor awake so the operator can see DSH output when it waits for input.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "locale/*.json"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}

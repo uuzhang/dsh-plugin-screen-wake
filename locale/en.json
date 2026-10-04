@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Screen Wake",
+    "description": "Breaks monitor blanking and the screen saver when DSH finishes a turn or waits for your choice, so the operator can see the screen."
+  }
+}

@@ -1,0 +1,9 @@
+- insert:
+    - id: screen-wake
+      name: '@local/dsh-plugin-screen-wake'
+      config:
+        onTurnEnd: true
+        onAwaitingUser: true
+        wakeOnLockedSession: false
+        minIntervalMs: 15000
+        nudgeInput: true
